@@ -2,7 +2,6 @@ package com.example.week1.entity;
 
 import javax.persistence.*;
 import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Size;
 
 @Entity(name = "users")
 public class User {
@@ -32,12 +31,6 @@ public class User {
     }
 
     public User() {}
-
-    public User(User user) {
-        this.id = user.getId();
-        this.userName = user.getUserName();
-        this.passWord = user.getPassWord();
-    }
 
     public User (String userName, String passWord) {
         this.userName = userName;
